@@ -1,7 +1,7 @@
 🌐 Projet d'Interface Mobile avec IA
 
 🎨 Présentation
-Ce projet explore l'utilisation de l'intelligence artificielle générative pour concevoir une interface mobile représentant un profil utilisateur. L'objectif était de transformer une maquette en code HTML et CSS, puis d'adapter ce code pour qu'il soit responsive. Ce projet illustre l'intérêt croissant des IA dans les domaines créatifs et techniques, notamment dans le développement web, où elles permettent un gain de temps significatif.
+Ce projet explore l'utilisation de l'intelligence artificielle générative et des models 3D par Blender. L'objectif était de transformer une maquette en code HTML et CSS avec l'IA, puis d'ajouter des models blender de fleurs.
 
 🛠 Technologies utilisées
 HTML & CSS → Structure et design
