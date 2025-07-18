@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+  padding: 16px;
+}
+
+.profile-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 16px;
+}
+
+.top-bar .back,
+.top-bar .settings {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile-info {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.username {
+  color: #6b8b74;
+}
+
+.joined {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px 0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stat {
+  text-align: center;
+  min-width: 90px;
+}
+
+.number {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.label {
+  font-size: 13px;
+  color: #666;
+}
+
+.favorites {
+  margin-top: 20px;
+}
+
+.favorites h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.flowers {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.flower {
+  text-align: center;
+  width: 30%;
+  min-width: 90px;
+  flex-grow: 1;
+}
+
+.flower img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.bottom-nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav .icon {
+  font-size: 22px;
+  color: #888;
+}
+
+.bottom-nav .icon.active {
+  color: #1a1a1a;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 480px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flowers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flower {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .flower {
+    width: 30%;
+  }
+}
