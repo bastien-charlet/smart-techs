@@ -11,6 +11,14 @@ body {
   padding: 16px;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
 .profile-container {
   max-width: 480px;
   margin: 0 auto;
@@ -106,20 +114,25 @@ body {
 }
 
 .bottom-nav {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
-  padding: 12px 0;
-  border-top: 1px solid #ddd;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .bottom-nav .icon {
-  font-size: 22px;
-  color: #888;
+    font-size: 22px;
+    color: #888;
 }
 
 .bottom-nav .icon.active {
-  color: #1a1a1a;
+    color: #1a1a1a;
 }
 
 /* ===== MEDIA QUERIES ===== */

@@ -15,6 +15,8 @@
         }
         body, html {
             height: 100%;
+            margin: 0;
+            padding: 0;
             overflow: hidden;
         }
         .container {
@@ -32,46 +34,31 @@
             width: 100%;
             z-index: 10;
         }
-        .nav {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #333;
-            padding: 10px 0;
-            z-index: 100;
-        }
-        .nav button {
-            background: none;
-            border: none;
-            color: white;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 101;
-        }
-        .nav button i {
-            font-size: 24px;
-        }
-        .nav button.center {
-            background-color: #555;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: -30px 0;
-        }
         #arScene {
             flex: 1;
             width: 100%;
-            height: 100%;
+            height: calc(100% - 60px); /* Ajustez 60px selon la hauteur de votre navbar */
         }
 
-        .a-enter-vr, .a-enter-ar {
-            opacity: 0;
+        .bottom-nav {
+            height: 60px; /* Assurez-vous que cela correspond à la hauteur définie ci-dessus */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 100; /* Assurez-vous que la navbar est au-dessus de la scène */
+        }
+
+        .bottom-nav .icon {
+            font-size: 22px;
+            color: #888;
+        }
+
+        .bottom-nav .icon.active {
+            color: #1a1a1a;
         }
     </style>
 </head>
@@ -103,9 +90,15 @@
     </div>
 
     <footer class="bottom-nav">
-        <a href="index.html" class="icon" title="Fleurs">🌸</a>
-        <a href="camera.html" class="icon" title="Camera">📷</a>
-        <a href="profil.html" class="icon active" title="Profil">👤</a>
+        <a href="index.html" class="icon" title="Fleurs">
+            <img src="images/fleur.svg" alt="Fleurs" class="nav-icon">
+        </a>
+        <a href="camera.html" class="icon" title="Camera">
+            <img src="images/camera.svg" alt="Camera" class="nav-icon">
+        </a>
+        <a href="profil.html" class="icon active" title="Profil">
+            <img src="images/profil.svg" alt="Profil" class="nav-icon">
+        </a>
     </footer>
 </body>
 </html>
